@@ -15,7 +15,7 @@ st.write('The Name on smoothie will be: ', name_on_order)
 
 import requests
 fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
-st.text(fruityvice_response)
+st.text(fruityvice_response.json())
 
 #session = get_active_session()
 cnx = st.connection("snowflake")
